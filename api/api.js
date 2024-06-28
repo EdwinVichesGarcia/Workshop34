@@ -7,7 +7,7 @@ const apiRouter = express.Router();
 apiRouter.get('/customers', async (request, response, next) => {
     try {
         const customers = await getMethods.customers.getCustomers();
-
+        //test commmit
         response.send({ customers });
 
     } catch (e) {
